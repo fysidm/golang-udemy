@@ -18,4 +18,6 @@ func main() {
 	// }
 
 	cards.saveToFile("my_cards")
+	cardsFromFile := newDeckFromFile("my_cards")
+	cardsFromFile.print()
 }

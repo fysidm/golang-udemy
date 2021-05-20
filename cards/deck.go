@@ -26,3 +26,8 @@ func (d deck) print() {
 		fmt.Println(i, card)
 	}
 }
+
+func deal(d deck, handSize int) (deck, deck) {
+	// slice array syntax [startIndexIncluding:upToNotIncluding]
+	return d[:handSize], d[handSize:]
+}

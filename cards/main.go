@@ -17,8 +17,5 @@ func main() {
 	// 	fmt.Println(index, card)
 	// }
 
-	hand, remaingCards := deal(cards, 5)
-
-	hand.print()
-	remaingCards.print()
+	cards.saveToFile("my_cards")
 }

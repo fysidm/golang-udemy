@@ -6,7 +6,11 @@ func main() {
 	// basic - initial variable
 	// var card string = "Ace of Spades"
 	// convention - initial variable
-	card := "Ace of Spades"
+	card := newCard()
 
 	fmt.Println(card)
+}
+
+func newCard() string {
+	return "Five of Diamonds"
 }

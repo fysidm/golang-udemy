@@ -10,8 +10,7 @@ func main() {
 
 	// Array: Fixed length array
 	// Slice: An array that cat grow or shrink
-	cards := deck{"Ace of Diamonds", newCard()}
-	cards = append(cards, "Six of Spades")
+	cards := newDeck()
 
 	// For Loop
 	// for index, card := range cards {
@@ -19,8 +18,4 @@ func main() {
 	// }
 
 	cards.print()
-}
-
-func newCard() string {
-	return "Five of Diamonds"
 }

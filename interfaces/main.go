@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 type bot interface {
+	// Type with same function name then it is an honorary member of type 'bot'
 	getGreeting() string
 }
 
@@ -18,6 +19,7 @@ func main() {
 }
 
 func printGreeting(b bot) {
+	// An honorary member of type 'bot' can call this function
 	fmt.Println(b.getGreeting())
 }
 
